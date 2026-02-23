@@ -6,6 +6,7 @@ import 'package:serv_app/Pagesusers/my_request_page.dart';
 import 'package:serv_app/Pagesusers/my_tasks_page.dart';
 import 'package:serv_app/Pagesusers/events_page.dart';
 import 'package:serv_app/Pagesusers/my_rewards_page.dart';
+import 'package:serv_app/Pagesusers/my_payslip_page.dart';
 import 'package:serv_app/Pagesusers/types_of_request_page.dart';
 
 // Theme colors
@@ -114,6 +115,18 @@ class MyServPage extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute(builder: (_) => const UserRewardsPage()),
+          );
+        },
+      ),
+      _ServItemData(
+        imagePath: 'assets/images/payslip.png',
+        label: "My Payslip",
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (_) => const MyPayslipPage(employee: 'Current Employee'),
+            ),
           );
         },
       ),

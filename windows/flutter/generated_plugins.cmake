@@ -15,6 +15,7 @@ list(APPEND FLUTTER_PLUGIN_LIST
   local_auth_windows
   pdfx
   permission_handler_windows
+  printing
   share_plus
   url_launcher_windows
 )
